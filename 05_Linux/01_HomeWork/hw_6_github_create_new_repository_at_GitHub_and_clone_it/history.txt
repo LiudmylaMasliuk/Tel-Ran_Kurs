@@ -1,0 +1,36 @@
+
+  177  cd ~/Dropbox/Tel-Ran_Kurs/05_Linux/01_HomeWork/
+  178  git clone https://github.com/innaponomareva/hw_6_github.git
+  179  cd ~/Dropbox/Tel-Ran_Kurs/05_Linux/01_HomeWork/hw_6_github/
+  180  touch script.sh
+  181  vi script.sh 
+  182  chmod u+x ~/Dropbox/Tel-Ran_Kurs/05_Linux/01_HomeWork/hw_6_github/script.sh 
+  183  ls -l
+  184  ./script.sh 
+  185  touch commitHistory.txt
+  186  git log >> commitHistory.txt 
+  187  cat commitHistory.txt 
+  188  git add ~/Dropbox/Tel-Ran_Kurs/05_Linux/01_HomeWork/hw_6_github/commitHistory.txt 
+  189  git commit -m "add_commitHistory"
+  190  git push
+  191  touch history.txt
+  192  history >> history.txt
+
+
+////////////////////////////////
+
+#!/bin/bash
+
+for run in {1..10}
+do
+echo "commit #" $run >> README.md
+date >> README.md
+
+git add ~/Dropbox/Tel-Ran_Kurs/05_Linux/01_HomeWork/hw_6_github/README.md
+git commit -m "updated_Date"
+git push
+done
+
+
+///////////////////////////////
+
