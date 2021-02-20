@@ -1,0 +1,15 @@
+   0 touch /home/newFile.txt
+   1 date >> /home/newFile.txt
+   2 df -h /
+   3 echo Available space in rootfs is 2.6G >> /home/newFile.txt
+   4 cat /home/newFile.txt
+   5 history | tail -5 >> /home/newFile.txt
+   6 cat /home/newFile.txt
+   7 cat /proc/cpuinfo | grep vendor
+   8 cat /proc/cpuinfo | grep vendor >> /home/newFile.txt
+   9 vi /home/newFile.txt
+  10 ps -ef
+  11 ps -ef | tail -n +2 | wc -l >> /home/newFile.txt
+  12 cat /newFile.txt
+  13 cat /home/newFile.txt
+  14 history > /tmp/InnasHistory.txt

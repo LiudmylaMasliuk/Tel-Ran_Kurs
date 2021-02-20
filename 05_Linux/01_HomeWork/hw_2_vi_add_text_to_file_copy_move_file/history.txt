@@ -1,0 +1,17 @@
+   0 mkdir -p /home/user/start
+   1 cd /home/user/start
+   2 touch 1.txt
+   3 vi 1.txt
+   4 date >> /home/user/start/1.txt
+   5 cat 1.txt
+   6 mkdir -p /opt/task
+   7 mv /home/user/start/1.txt /opt/task/start.txt
+   8 ls /opt/task
+   9 cd /
+  10 ls -la
+  11  echo dr-xr-xr-x 12 root root 0 Dec 15 23:30 sys >> /opt/task/start.txt
+  12 echo drwxrwxrwt 2 root root 37 Nov 21 11:52 tmp >> /opt/task/start.txt
+  13 echo drwxr-xr-x 10 root root 229 Jun 24 14:46 usr >> /opt/task/start.txt
+  14 echo drwxr-xr-x 16 root root 348 Aug 27 12:00 var >> /opt/task/start.txt
+  15 vi /opt/task/start.txt
+  16 history > /tmp/history.txt

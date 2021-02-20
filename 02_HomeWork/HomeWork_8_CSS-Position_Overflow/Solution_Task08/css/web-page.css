@@ -1,0 +1,112 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-family: 'Montserrat', Helvetica, sans-serif;
+  color: white;
+}
+
+.wrapper{
+  width: 900px;
+  margin: 0 auto;
+}
+
+#top-section{
+  background: url("./../images/web-page/bg-new.png");
+  background-size: cover;
+  height: 100vh;
+  max-height: 800px;
+}
+
+#top-section .wrapper{
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+nav.nav ul{
+  list-style: none;
+  text-transform: uppercase;
+  padding: 30px 0px;
+}
+
+nav.nav ul li{
+  float: left;
+  margin-right: 15px;
+}
+
+.nav ul li a{
+  color: inherit;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.clearfix{
+  clear: both;
+}
+
+h1.slogan{
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin-top: 60px;
+  font-weight: 400;
+  line-height: 3rem;
+  word-wrap: break-word;
+  word-spacing: 100vw;
+}
+
+h1.slogan strong{
+  font-weight: 600;
+}
+
+p.sub-slogan{
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin-top: 20px;
+}
+
+#top-section button{
+  padding: 20px 50px;
+  text-transform: uppercase;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: transparent;
+  font-size: 1.5rem;
+  color: white;
+  margin-top: 80px;
+}
+
+#top-section .wrapper img{
+  position: absolute;
+  width: 400px;
+  right: 0;
+  bottom: -160px;
+}
+
+#bottom-section{
+  background-color: orange;
+  padding: 80px 0;
+}
+
+.card {
+  float: left;
+  margin: 0 10px;
+  width: calc(100% / 4 - 20px);
+  text-align: center;
+  padding: 30px;
+}
+
+.card img{
+  width: 30%;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.card h3{
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}

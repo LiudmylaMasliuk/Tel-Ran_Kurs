@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form & table</title>
+</head>
+<body>
+    
+<h1>Form/imput etc</h1>
+<h3>Simple imput</h3>
+<input type="text" />
+<h3>Main form types</h3>
+<form action="#" method="GET">
+    Name: <br /> <input type="text" value="Name" />
+    <br />
+    <br />
+    Name: 
+    <br /> <input type="text" placeholder="First name"/>
+    <br />
+    <br />
+    Age: 
+    <br /> <input type="number" max="100" min="1" step="1" value="10" />
+    <br />
+    <br />
+    Gender: <br />
+    <input type="radio" value="female" name="gender" /> female
+    <input type="radio" value="male" name="gender" /> male 
+    <br />
+    <input type="submit" value="send" />
+    <br />
+    <br />
+    Value: <br />
+    <input type="range" max="300" min="0 step="5" name="my range" />
+    <input type="submit" value="send" />
+    <br />
+    <br />
+    Email: <br />
+    <input type="email" name="your email" />
+    <br />
+    <input type="submit" value="send" />
+    <br />
+    <br />
+    Checkbox: <br />
+    <input type="checkbox" /> I accept the terms
+    <br />
+    <input type="submit" value="send" />
+    <br />
+    <br />
+    Car: <br />
+    <select name="car" id="">
+        <option value="" selected></option>
+        <option value="Volkswagen">Volkswagen</option>
+        <option value="BMW">BMW</option>
+        <option value="Opel" disabled>Opel</option>
+    </select>
+    <br />
+    <br />
+    <input type="color">
+    <br />
+    <br />
+    Password:<br />
+    <input type="password" /> <input type="image" src="./images.png" width="100">
+    <br />
+    <br />
+    Date:<br />
+    <input type="date" />
+    <br />
+    <br />
+    Message: <br />
+    <textarea name="" id="" cols="30" rows="10" placeholder="Type your message"></textarea>
+    <br />
+    <br />
+    <form action="#" method="GET"></form>
+        <fieldset>
+            <legend>Contact</legend>
+            <p><label for="name">Name</label><br />
+                <input type="text" id="name" name="name">
+            </p>
+            <p>
+                <label for="email">Email</label>
+                <input type="email" id="email">
+            </p>
+            <p>
+                <label for="tel">Phonenumber</label> <br>
+                <input type="tel" id="tel">
+            </p>
+        </fieldset>
+        <input type="submit" value="send" id="">
+        <input type="reset" value="clear">
+        <input type="button" value="stop">
+ </form>
+
+
+</body>
+</html>

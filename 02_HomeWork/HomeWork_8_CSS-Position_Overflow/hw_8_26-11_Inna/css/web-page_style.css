@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+.clearfix {
+  clear: both;
+}
+
+/* *** Header *** */
+header {
+  background-image: url("./../images/web-page/bg-new.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* *** Container *** */
+.container {
+  width: 75%;
+  margin: 0 auto;
+}
+
+/* *** Navigation *** */
+.container ul {
+  padding-top: 25px;
+  list-style: none;
+}
+.container ul li {
+  float: left;
+  margin-right: 60px;
+}
+.container ul li a {
+  font-size: 1.7rem;
+  text-decoration: none;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: rgb(170, 170, 180);
+}
+
+/* *** Left Side *** */
+div .left {
+  width: 50%;
+  float: left;
+  margin-top: 100px;
+}
+div .left h1 {
+  font-size: 3.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-weight: 100;
+  line-height: 4.5rem;
+  margin-bottom: 40px;
+}
+div .left button {
+  border: 1px solid rgb(170, 170, 180);
+  border-radius: 15px;
+  padding: 20px 50px;
+  background-color: transparent;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: rgb(170, 170, 180);
+}
+
+/* *** Right Side *** */
+div .right {
+  width: 50%;
+  float: left;
+  padding-left: 55px;
+  margin-top: 70px;
+}
+div .right img {
+  width: 500px;
+}
+
+/* *** Footer *** */
+footer {
+  background-color: rgb(254, 151, 25);
+}
+
+/* *** Card-Section *** */
+.card-section {
+  margin: 0 -15px;
+  padding: 94px 0;
+}
+.card {
+  margin: 0 15px;
+  padding: 35px;
+  width: calc(100% / 4 - 30px);
+  /* border: 1px solid white; */
+  text-align: center;
+  float: left;
+}
+.card img {
+  width: 70px;
+  cursor: pointer;
+}
+.card h3 {
+  margin: 15px 0;
+}
+.card p {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}

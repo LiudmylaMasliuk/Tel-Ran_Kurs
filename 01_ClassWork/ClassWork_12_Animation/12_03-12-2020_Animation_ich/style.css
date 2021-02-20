@@ -1,0 +1,116 @@
+*{
+  box-sizing: border-box;
+}
+
+div.container{
+  width: 600px;
+  margin: 100px auto;
+}
+
+h2.box{
+  padding: 15px;
+  border: 1px solid black;
+  width: 200px;
+  position: relative;
+  /* transition-property: background-color;
+  transition-duration: 1s;
+  transition-delay: 1s;
+  transition-timing-function: linear; */
+  transition: background-color 1s linear 1s,
+  transform 1s cubic-bezier(0.7,1,.92,1.56),;
+  /* visibility 3s linear 1s; */
+
+}
+
+h2.box:hover{
+  background-color: red;
+  transform: scale(1.5);
+  /* visibility: hidden; */
+  left: 100px;
+}
+
+.item{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  color: white;
+  font-size: 2rem;
+  animation-name: moving, change-color;
+  animation-duration: 4s;
+  animation-delay: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  /* animation-iteration-count: infinite; */
+}
+
+@keyframes moving{
+  0%{left:100px;}
+  25%{
+    left: 400px; 
+    top: 400px;}
+
+  50%{
+    left: 300px; 
+    top: 600px;}
+
+  75%{left: 800px;}
+
+  100%{
+    left: 100px; 
+    top: 600px;
+    transform: rotate(180deg) scale(4);
+  }
+}
+
+/* Izmenenie zveta */
+@keyframes change-color{
+  from{background-color: blue;}
+  to{background-color: blueviolet;}
+}
+
+/* Miganie */
+@keyframes flash{
+  from, 50%,to{
+    opacity: 1;
+  }
+25%, 75%{
+  opacity: 0;
+  }
+}
+
+
+
+
+
+/* ***** Timing-function ***** */
+/* Propisivaem obwie svojstva */
+div.box-2{
+  width: 100px;
+  height: 50px;
+  background-color: red;
+  position: relative;
+  animation: mymove 5s infinite;
+}
+
+/* Propisivaem individualnie svojstva */
+#div1{
+  animation-timing-function: linear;
+}
+#div2{
+  animation-timing-function: ease;
+}
+#div3{
+  animation-timing-function: ease-in;
+}
+#div4{
+  animation-timing-function: ease-out;
+}
+#div5{
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes mymove{
+  from{left: 0px;}
+  to{left: 300px;}
+}

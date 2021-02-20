@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color-picker</title>
+</head>
+<style>
+  #colorResult{
+    width: 250px;
+    height: 250px;
+    background-color: black;
+    margin-top: 2rem;
+  }
+  fieldset{
+    border: none;
+  }
+  output{
+    display: inline-block;
+    min-width: 2.5em;
+  }
+  label, output{
+    padding: 5px 10px;
+    color: black;
+    font-size: 1.2rem;
+  }
+  label[for=red],output[for=red]{
+    background-color: red;
+    color: white;
+  }
+  label[for=green],output[for=green]{
+    background-color: green;
+    color: white;
+  }
+  label[for=blue],output[for=blue]{
+    background-color: blue;
+    color: white;
+  }
+  #hex{
+    min-width: 4.5rem;
+    font-size: 1.5em;
+    margin-left: 70px;
+  }
+
+
+</style>
+
+
+<body>
+  <h1>My color picker</h1>
+  <fieldset>
+    <label for="red">R</label>
+    <input id="red" type="range" min="0" max="255" step="1" value="0">
+    <output for="red" id="red_out">0</output>
+  </fieldset>
+
+  <fieldset>
+    <label for="green">G</label>
+    <input id="green" type="range" min="0" max="255" step="1" value="0">
+    <output for="green" id="green_out">0</output>
+  </fieldset>
+
+  <fieldset>
+    <label for="blue">B</label>
+    <input id="blue" type="range" min="0" max="255" step="1" value="0">
+    <output for="blue" id="blue_out">0</output>
+  </fieldset>
+
+  <div id="colorResult"></div>
+  <output id="hex">#000000</output>
+
+
+  <script src="./color-picker.js"></script>
+</body>
+</html>

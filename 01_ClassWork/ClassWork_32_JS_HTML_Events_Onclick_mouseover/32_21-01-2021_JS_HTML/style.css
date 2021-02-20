@@ -1,0 +1,17 @@
+.one{
+  width: 200px;
+  height: 200px;
+  background-color: aquamarine;
+  display: inline-block;
+}
+
+.two{
+  width: 200px;
+  height: 200px;
+  background-color: lightcoral;
+  display: inline-block;
+}
+
+.wrapper{
+  margin-top: 20px;
+}

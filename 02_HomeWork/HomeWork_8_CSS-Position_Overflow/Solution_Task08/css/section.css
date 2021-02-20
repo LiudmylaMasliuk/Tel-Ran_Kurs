@@ -1,0 +1,51 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section{
+  padding: 30px 0;
+}
+
+.wrapper{
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.wrapper h2{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+.wrapper p{
+  width: 60%;
+  margin: 0 auto 35px;
+  text-align: center;
+}
+
+.card{
+  float: left;
+  /* display: inline-block; */
+  margin: 100px 45px 0;
+  width: calc(100% / 3 - 90px);
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 50px 20px 20px;
+  position: relative;
+}
+
+.card p{
+  text-align: left;
+  width: 100%;
+  margin: 0 0 15px;
+}
+
+.card img.avatar{
+  position: absolute;
+  left: -30px;
+  top: -30px;
+  border-radius: 50%;
+}
+
